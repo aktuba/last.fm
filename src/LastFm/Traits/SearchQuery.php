@@ -13,7 +13,7 @@ trait SearchQuery
      * @param  array  $jsonData
      * @return array
      */
-    public function getSearchQuery(array $jsonData): array
+    private function getSearchQuery(array $jsonData): array
     {
         $result = [];
 
