@@ -12,7 +12,7 @@ use Tightenco\Collect\Support\Collection;
  * @package aktuba\LastFm\Mappers\Album
  *
  * @property Mappers\Query $query
- * @property Collection $result
+ * @property Collection $results
  * @property Mappers\MetaFor $meta
  */
 class Search extends JsonMapper
