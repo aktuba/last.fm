@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eafdb546b1c7e03624a13375a0534425",
+    "content-hash": "751b4a2fdfe714fea29b6d036b1b9695",
     "packages": [
         {
             "name": "aktuba/json-mapper",

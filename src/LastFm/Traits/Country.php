@@ -18,7 +18,7 @@ trait Country
      * @return string|null
      * @throws InvalidArgument
      */
-    protected function getCountryName($country): ?string
+    private function getCountryName($country): ?string
     {
         $data = [];
         $iso3166 = new ISO3166();
