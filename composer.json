@@ -1,0 +1,33 @@
+{
+    "name": "aktuba/last.fm",
+    "description": "Api client for last.fm",
+    "keywords": [
+        "library",
+        "lastfm",
+        "last.fm",
+        "api",
+        "client"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ruslan Kalinov",
+            "email": "aktuba@yandex.ru",
+            "homepage": "https://aktuba.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "aktuba/json-mapper": "^0.1",
+        "guzzlehttp/guzzle": "^6.0",
+        "league/iso3166": "^2.1",
+        "tightenco/collect": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "aktuba\\": "src"
+        }
+    }
+}
