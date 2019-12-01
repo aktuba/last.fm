@@ -3,13 +3,14 @@
 namespace aktuba\LastFm\Mappers\Geo;
 
 use aktuba\JsonMapper\JsonMapper;
+use aktuba\LastFm\Mappers\Track;
 use Tightenco\Collect\Support\Collection;
 
 /**
  * Class TopTracks
  * @package aktuba\LastFm\Mappers\Geo
  *
- * @property Collection $tracks
+ * @property Collection|Track[] $tracks
  * @property Items\Meta $meta
  */
 class TopTracks extends JsonMapper

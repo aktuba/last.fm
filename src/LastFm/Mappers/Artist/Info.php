@@ -3,6 +3,8 @@
 namespace aktuba\LastFm\Mappers\Artist;
 
 use aktuba\JsonMapper\JsonMapper;
+use aktuba\LastFm\Mappers\Artist;
+use aktuba\LastFm\Mappers\Tag;
 use Tightenco\Collect\Support\Collection;
 
 /**
@@ -12,10 +14,9 @@ use Tightenco\Collect\Support\Collection;
  * @property string $id
  * @property string $name
  * @property string $url
- * @property Collection $artists
  * @property Items\Stats $stats
- * @property Collection $similar
- * @property Collection $tags
+ * @property Collection|Artist[] $similar
+ * @property Collection|Tag[] $tags
  * @property Items\Bio $bio
  */
 class Info extends JsonMapper

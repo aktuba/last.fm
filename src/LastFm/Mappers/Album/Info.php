@@ -14,11 +14,11 @@ use Tightenco\Collect\Support\Collection;
  * @property string $name
  * @property string $artist
  * @property string $url
- * @property Collection $images
+ * @property Collection|Mappers\Image[] $images
  * @property int $listeners
  * @property int $playcount
- * @property Collection $tracks
- * @property Collection $tags
+ * @property Collection|Mappers\Track[] $tracks
+ * @property Collection|Mappers\Tag[] $tags
  * @property Mappers\Wiki $wiki
  */
 class Info extends JsonMapper

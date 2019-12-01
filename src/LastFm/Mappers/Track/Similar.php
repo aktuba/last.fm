@@ -3,13 +3,14 @@
 namespace aktuba\LastFm\Mappers\Track;
 
 use aktuba\JsonMapper\JsonMapper;
+use aktuba\LastFm\Mappers\Track;
 use Tightenco\Collect\Support\Collection;
 
 /**
  * Class Similar
  * @package aktuba\LastFm\Mappers\Track
  *
- * @property Collection $tracks
+ * @property Collection|Track[] $tracks
  * @property Items\Meta $meta
  */
 class Similar extends JsonMapper

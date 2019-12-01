@@ -18,7 +18,7 @@ use aktuba\LastFm\Mappers;
  * @property int $playcount
  * @property Mappers\Artist $artist
  * @property Mappers\Album $album
- * @property Collection $tags
+ * @property Collection|Mappers\Tag[] $tags
  * @property Mappers\Wiki $wiki
  */
 class Info extends JsonMapper

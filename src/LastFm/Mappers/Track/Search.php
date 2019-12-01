@@ -12,7 +12,7 @@ use aktuba\LastFm\Traits\SearchQuery;
  * @package aktuba\LastFm\Mappers\Track
  *
  * @property Mappers\Query $query
- * @property Collection $results
+ * @property Collection|Mappers\Track[] $results
  * @property Mappers\MetaFor $meta
  */
 class Search extends JsonMapper

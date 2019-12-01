@@ -3,13 +3,14 @@
 namespace aktuba\LastFm\Mappers\Tag;
 
 use aktuba\JsonMapper\JsonMapper;
+use aktuba\LastFm\Mappers\Artist;
 use Tightenco\Collect\Support\Collection;
 
 /**
  * Class TopArtists
  * @package aktuba\LastFm\Mappers\Tag
  *
- * @property Collection $artists
+ * @property Collection|Artist[] $artists
  * @property Items\Meta $meta
  */
 class TopArtists extends JsonMapper
