@@ -4,6 +4,10 @@ namespace aktuba\LastFm;
 
 use GuzzleHttp\Client;
 
+/**
+ * Class Method
+ * @package aktuba\LastFm
+ */
 abstract class Method
 {
 

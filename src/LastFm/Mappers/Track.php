@@ -45,6 +45,10 @@ class Track extends JsonMapper
         'images' => 'image',
     ];
 
+    /**
+     * @param array $jsonData
+     * @return array
+     */
     protected function formatJson(array $jsonData): array
     {
         if (array_key_exists('artist', $jsonData) && is_string($jsonData['artist'])) {

@@ -7,6 +7,10 @@ use aktuba\LastFm\Mappers;
 use aktuba\LastFm\Method;
 use aktuba\LastFm\Traits\Country;
 
+/**
+ * Class Album
+ * @package aktuba\LastFm\Methods
+ */
 class Album extends Method
 {
 
@@ -41,7 +45,7 @@ class Album extends Method
             'mbid' => $id,
             'autocorrect' => (int)$autoCorrect,
             'username' => $username,
-            'lang' => $this->getCountryName($lang)
+            'lang' => $this->getLang($lang),
         ])->get();
         return $result;
     }
@@ -93,7 +97,7 @@ class Album extends Method
         $result = $this->getRequest('album.search', [
             'album' => $album,
             'page' => $page,
-            'limit' => $limit
+            'limit' => $limit,
         ])->get();
         return $result;
     }

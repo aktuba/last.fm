@@ -32,7 +32,7 @@ class Tag extends Method
         /** @var Mappers\Tag\Info $result */
         $result = $this->getRequest('tag.getInfo', [
             'tag' => $tag,
-            'lang' => $this->getCountryName($lang),
+            'lang' => $this->getLang($lang),
         ])->get();
         return $result;
     }

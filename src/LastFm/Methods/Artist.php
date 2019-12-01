@@ -43,7 +43,7 @@ class Artist extends Method
             'mbid' => $id,
             'autocorrect' => (int)$autocorrect,
             'username' => $username,
-            'lang' => $this->getCountryName($lang)
+            'lang' => $this->getLang($lang),
         ])->get();
         return $result;
     }
@@ -72,7 +72,7 @@ class Artist extends Method
             'artist' => $artist,
             'mbid' => $id,
             'autocorrect' => (int)$autocorrect,
-            'limit' => $limit
+            'limit' => $limit,
         ])->get();
         return $result;
     }

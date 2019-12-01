@@ -20,8 +20,10 @@ use aktuba\LastFm\Exceptions\NotImplemented;
 class LastFm
 {
 
+    /** @var string */
     private $apiKey;
 
+    /** @var Client */
     private $client;
 
     /** @var array */
@@ -30,6 +32,7 @@ class LastFm
     /**
      * LastFm constructor.
      * @param string $apiKey
+     * @param array $guzzleOptions
      */
     public function __construct(string $apiKey, array $guzzleOptions = [])
     {

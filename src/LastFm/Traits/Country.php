@@ -44,4 +44,30 @@ trait Country
         return $data['name'] ?? null;
     }
 
+    private function getLang($lang): ?string
+    {
+        $data = [];
+        $iso3166 = new ISO3166();
+        try {
+
+            if (is_string($lang)) {
+                $length = mb_strlen((string) $lang);
+                if ($length > 3) {
+                    $data = $iso3166->name($lang);
+                } elseif ($length > 2) {
+                    $data = $iso3166->alpha3($lang);
+                } elseif ($length > 1) {
+                    $data = $iso3166->alpha2($lang);
+                }
+            } elseif (is_numeric($lang)) {
+                $data = $iso3166->numeric($lang);
+            }
+
+        } catch (OutOfBoundsException $exception) {
+            throw new InvalidArgument("Lang {$lang} not found");
+        }
+
+        return count($data) > 0 ? mb_strtolower($data['alpha2']) : null;
+    }
+
 }

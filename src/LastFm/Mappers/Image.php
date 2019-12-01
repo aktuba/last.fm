@@ -14,15 +14,18 @@ use aktuba\JsonMapper\JsonMapper;
 class Image extends JsonMapper
 {
 
+    /** @var array */
     protected const PROPERTIES = [
         'url' => 'string',
         'size' => 'string',
     ];
 
+    /** @var array */
     protected const ALIASES = [
         'url' => '#text',
     ];
 
+    /** @var array */
     protected const REQUIRED = [
         '#text',
         'size',

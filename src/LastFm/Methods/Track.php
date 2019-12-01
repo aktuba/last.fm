@@ -6,6 +6,10 @@ use aktuba\LastFm\Exceptions;
 use aktuba\LastFm\Mappers;
 use aktuba\LastFm\Method;
 
+/**
+ * Class Track
+ * @package aktuba\LastFm\Methods
+ */
 class Track extends Method
 {
 

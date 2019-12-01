@@ -65,9 +65,11 @@ class Request
     /** @var Client */
     private $client;
 
-    private $method = null;
+    /** @var string|null */
+    private $method;
 
-    private $parameters = [];
+    /** @var array */
+    private $parameters;
 
     /**
      * Request constructor.
@@ -76,12 +78,7 @@ class Request
      * @param string $method
      * @param array $parameters
      */
-    public function __construct(
-        string $apiKey,
-        Client $client,
-        string $method,
-        array $parameters
-    )
+    public function __construct(string $apiKey, Client $client, string $method, array $parameters)
     {
         $this->apiKey = $apiKey;
         $this->client = $client;
